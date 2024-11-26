@@ -22,7 +22,7 @@ stages:
         inputs:
           script: |
             docker build -t git.systementor.se/yacloud/stefan1120 .
-            docker login -u $env:DOCKER_USERNAME -p $env:DOCKER_PASSWORD https://git.systementor.se
+            docker login -u $DOCKER_USERNAME -p $DOCKER_PASSWORD https://git.systementor.se
             docker push git.systementor.se/yacloud/stefan1120
         env:
           DOCKER_USERNAME: $(DOCKER_USERNAME)
