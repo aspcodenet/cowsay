@@ -10,6 +10,7 @@ import (
 
 func main() {
 	// test
+	// test 0327
 	argsWithoutProg := os.Args[1:]
 	argsText := strings.Join(argsWithoutProg, " ")
 	say, err := cowsay.Say(
